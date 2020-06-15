@@ -14,3 +14,6 @@ insert into book(title, isbn) value('Twilight', '1234-A'),
 
 /*delete item*/
 delete from book where id=3;
+
+/*update item*/
+update author set first_name="Clark Staples" where id=2;
