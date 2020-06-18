@@ -117,3 +117,23 @@ limit 10
 /*average credit limit from each country*/
 select country, sum(creditLimit), from customers
 group by country
+
+/*Show the sum of credit limit for all the customers in each country*/
+
+SELECT country, SUM(creditLimit) FROM customers
+GROUP BY country
+
+/*Show the maximum credit limit in each country*/
+
+SELECT country, MAX(creditLimit) FROM customers
+GROUP BY country
+
+/*Show the minimum credit limit in each country*/
+
+SELECT country, MIN(creditLimit) FROM customers
+GROUP BY country
+
+/*Show the average credit limit in each country*/
+
+SELECT country, AVG(creditLimit) FROM customers
+GROUP BY country
